@@ -8,7 +8,7 @@
 /**
  * This function calculates volume of Sphere.
  */
-function calculate () {
+function calculate (){
   // input
   const radius = parseInt(document.getElementById("radius").value)
 
@@ -16,5 +16,5 @@ function calculate () {
   const volume = (4 / 3 * Math.PI * radius ** 3)
 
   // output
-  document.getElementById("area").innerHTML = 'The volume is: ' + volume.toFixed(2) + ' mm³'
+  document.getElementById("area").innerHTML = "The volume is: " + volume.toFixed(2) + " mm³"
 }
