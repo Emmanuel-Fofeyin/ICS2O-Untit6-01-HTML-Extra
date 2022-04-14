@@ -1,21 +1,20 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2022 Emmanuel-Fofeyin All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Emmanuel.Fofeyin
+// Created on: April 2022
 // This file contains the JS functions for index.html
 
+'use strict'
 /**
- * Check servie worker.
+ * This function calculates volume of Sphere.
  */
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/github-page-pwa/sw.js", {
-    scope: "/github-page-pwa/",
-  })
-}
+function calculate () {
+  // input
+  const radius = parseInt(document.getElementById('radius').value)
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  // process
+  const volume = (4 / 3 * Math.PI * radius ** 3)
+
+  // output
+  document.getElementById('area').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' mm³'
 }
