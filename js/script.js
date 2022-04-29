@@ -5,6 +5,16 @@
 // This file contains the JS functions for index.html
 
 "use·strict"
+
+/**
+ * Check servie worker.
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Untit6-01-HTML-Extra/sw.js", {
+    scope: "/ICS2O-Untit6-01-HTML-Extra/",
+  })
+}
+
 /**
  * This function calculates volume of Sphere.
  */
